@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Drawiz</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="facebook_application_id" translatable="false">1:24362585507:android:d986fe085368ec30f09e16</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb1:24362585507:android:d986fe085368ec30f09e16</string>
+</resources>
+

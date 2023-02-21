@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.GameActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/game_LAY_drawingtools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/black">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="0.2"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/game_BTN_undo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/purple_200"
+                app:icon="@drawable/ic_undo"
+                android:visibility="invisible"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="0.2"/>
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/game_BTN_colors"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/purple_200"
+                app:icon="@drawable/ic_colors"
+                android:visibility="invisible"
+                />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="0.2"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/game_BTN_brush"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/purple_700"
+                app:icon="@drawable/ic_brush"
+                android:visibility="invisible"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="0.2"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.google.android.material.slider.RangeSlider
+            android:id="@+id/game_SLD_brushsize"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="invisible"/>
+        
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.example.drawiz.assets.CustomDrawView
+        android:id="@+id/game_LAY_drawview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/game_LAY_guesstools"
+        android:layout_below="@id/game_LAY_drawingtools"
+        android:layout_centerInParent="true" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/game_LAY_guesstools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/game_TXT_guess"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Type here!"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginEnd="20dp"
+            android:visibility="invisible"
+            />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/game_BTN_sendguess"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Guess"
+            android:textSize="25sp"
+            android:layout_weight="0.55"
+            android:visibility="invisible"/>
+
+
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+</RelativeLayout>

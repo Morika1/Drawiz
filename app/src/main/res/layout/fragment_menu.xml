@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="70dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/home_BTN_menubtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/home_BTN_play"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:text="Find Match!" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/home_BTN_leaderboard"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:text="Leaderboard"
+            android:visibility="gone"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</RelativeLayout>
